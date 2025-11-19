@@ -2,7 +2,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import App from './App'
-import Test from './Test'
+import ServicesPage from './components/ServicesPage'
+import AutomationPage from './components/AutomationPage'
+import CaseStudiesPage from './components/CaseStudiesPage'
+import AboutPage from './components/AboutPage'
+import ContactPage from './components/ContactPage'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,7 +14,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/automation" element={<AutomationPage />} />
+        <Route path="/case-studies" element={<CaseStudiesPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
